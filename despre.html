@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Despre - Liceul Atanasie Marienescu Lipova</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar (poți copia codul navbar din index.html) -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Liceul Atanasie Marienescu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="informatiiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Informații
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="informatiiDropdown">
+              <li><a class="dropdown-item" href="despre.html">Despre liceu</a></li>
+              <li><a class="dropdown-item" href="profesori.html">Profesori</a></li>
+              <li><a class="dropdown-item" href="clase.html">Clase</a></li>
+              <li><a class="dropdown-item" href="orar.html">Orar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="documenteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documente utile
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="documenteDropdown">
+              <li><a class="dropdown-item" href="regulament.html">Regulament intern</a></li>
+              <li><a class="dropdown-item" href="calendar.html">Calendar examene</a></li>
+              <li><a class="dropdown-item" href="cereri.html">Cereri tip</a></li>
+              <li><a class="dropdown-item" href="manuale.html">Manuale digitale</a></li>
+              <li><a class="dropdown-item" href="platforme.html">Platforme educaționale</a></li>
+              <li><a class="dropdown-item" href="orar-online.html">Orar online</a></li>
+              <li><a class="dropdown-item" href="alte-doc.html">Alte documente</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="activitatiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Activități
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="activitatiDropdown">
+              <li><a class="dropdown-item" href="evenimente.html">Evenimente</a></li>
+              <li><a class="dropdown-item" href="noutati.html">Noutăți</a></li>
+              <li><a class="dropdown-item" href="galerie.html">Galerie foto</a></li>
+              <li><a class="dropdown-item" href="excursii.html">Excursii</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="page-title mb-4">Despre liceu</h1>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <p>
+          <strong>Liceul Atanasie Marienescu Lipova</strong> este o instituție cu tradiție, dedicată formării generațiilor viitoare
+          printr-o educație modernă, bazată pe valori, performanță și implicare.
+        </p>
+        <ul>
+          <li>Peste 70 de ani de excelență în educație</li>
+          <li>Profesori dedicați și experimentați</li>
+          <li>Dotări moderne și activități extracurriculare diverse</li>
+          <li>Rezultate remarcabile la examene și olimpiade</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <!-- Element interactiv: Carousel cu imagini -->
+        <div id="carouselDespre" class="carousel slide shadow" data-bs-ride="carousel">
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="lam2.jpg" class="d-block w-100" alt="Imagine liceu exterior">
+            </div>
+            <div class="carousel-item">
+              <img src="lam1.png" class="d-block w-100" alt="Imagine sala de clasă">
+            </div>
+            <div class="carousel-item">
+              <img src="ev1.png" class="d-block w-100" alt="Imagine elevi">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDespre" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDespre" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Următor</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Element interactiv: Acordeon valori -->
+    <div class="mb-5">
+      <h2 class="h4 mb-3">Valorile liceului</h2>
+      <div class="accordion" id="valoriAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="valoare1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#valoare1col" aria-expanded="true" aria-controls="valoare1col">
+              Excelență
+            </button>
+          </h2>
+          <div id="valoare1col" class="accordion-collapse collapse show" aria-labelledby="valoare1" data-bs-parent="#valoriAccordion">
+            <div class="accordion-body">
+              Ne străduim să atingem cele mai înalte standarde în educație, promovând performanța academică și profesională.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="valoare2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valoare2col" aria-expanded="false" aria-controls="valoare2col">
+              Respect și diversitate
+            </button>
+          </h2>
+          <div id="valoare2col" class="accordion-collapse collapse" aria-labelledby="valoare2" data-bs-parent="#valoriAccordion">
+            <div class="accordion-body">
+              Încurajăm respectul reciproc, toleranța și acceptarea diversității între elevi, profesori și comunitate.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="valoare3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valoare3col" aria-expanded="false" aria-controls="valoare3col">
+              Implicare civică
+            </button>
+          </h2>
+          <div id="valoare3col" class="accordion-collapse collapse" aria-labelledby="valoare3" data-bs-parent="#valoriAccordion">
+            <div class="accordion-body">
+              Susținem implicarea activă a elevilor în proiecte și activități pentru dezvoltarea comunității locale.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Element interactiv: Buton info suplimentare -->
+    <div class="text-center mb-5">
+      <button id="btnShowInfo" class="btn btn-outline-primary">Află mai multe despre istoria liceului</button>
+      <div id="extraInfo" class="mt-3 d-none">
+        <div class="alert alert-info">
+          Liceul nostru a fost înființat în anul 1950 și, de-a lungul decadelor, a format mii de absolvenți pregătiți pentru viață și carieră. 
+          Suntem mândri de tradiția și reputația noastră construită prin muncă, pasiune și rezultate!
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 Liceul Meu. Toate drepturile rezervate.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script pentru elementul interactiv "Află mai multe" -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var btn = document.getElementById('btnShowInfo');
+      var info = document.getElementById('extraInfo');
+      btn.addEventListener('click', function() {
+        info.classList.toggle('d-none');
+        btn.classList.toggle('btn-outline-primary');
+        btn.classList.toggle('btn-primary');
+        btn.textContent = info.classList.contains('d-none') ? 'Află mai multe despre istoria liceului' : 'Ascunde detalii';
+      });
+    });
+  </script>
+</body>
+</html>

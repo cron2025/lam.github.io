@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acasă - Liceul Atanasie Marienescu Lipova</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS personalizat -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Liceul Atanasie Marienescu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+       <ul class="navbar-nav ms-auto">
+  <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+  
+  <!-- Dropdown Informatii -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="informatiiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Informații
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="informatiiDropdown">
+      <li><a class="dropdown-item" href="despre.html">Despre liceu</a></li>
+      <li><a class="dropdown-item" href="profesori.html">Profesori</a></li>
+      <li><a class="dropdown-item" href="clase.html">Clase</a></li>
+      <li><a class="dropdown-item" href="orar.html">Orar</a></li>
+    </ul>
+  </li>
+  
+  <!-- Dropdown Documente utile -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="documenteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Documente utile
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="documenteDropdown">
+      <li><a class="dropdown-item" href="regulament.html">Regulament intern</a></li>
+      <li><a class="dropdown-item" href="calendar.html">Calendar examene</a></li>
+      <li><a class="dropdown-item" href="cereri.html">Cereri tip</a></li>
+      <li><a class="dropdown-item" href="manuale.html">Manuale digitale</a></li>
+      <li><a class="dropdown-item" href="platforme.html">Platforme educaționale</a></li>
+      <li><a class="dropdown-item" href="orar-online.html">Orar online</a></li>
+      <li><a class="dropdown-item" href="alte-doc.html">Alte documente</a></li>
+    </ul>
+  </li>
+  
+  <!-- Dropdown Activitati -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="activitatiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Activități
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="activitatiDropdown">
+      <li><a class="dropdown-item" href="evenimente.html">Evenimente</a></li>
+      <li><a class="dropdown-item" href="noutati.html">Noutăți</a></li>
+      <li><a class="dropdown-item" href="galerie.html">Galerie foto</a></li>
+      <li><a class="dropdown-item" href="excursii.html">Excursii</a></li>
+    </ul>
+  </li>
+ 
+</li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="page-title">Bun venit la Liceul Atanasie Marienescu Lipova!</h1>
+    <p>Acesta este site-ul oficial al liceului, unde găsiți toate informațiile despre școală, profesori, orar și evenimente.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="img/lam1.png" class="card-img-top" alt="Școala">
+          <div class="card-body">
+            <h5 class="card-title">Despre liceu</h5>
+            <p class="card-text">Aflați mai multe despre istoria și valorile liceului nostru.</p>
+            <a href="despre.html" class="btn btn-primary">Citește mai mult</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="img/prof1.png" class="card-img-top" alt="Profesori">
+          <div class="card-body">
+            <h5 class="card-title">Profesori</h5>
+            <p class="card-text">Cunoaște echipa noastră dedicată și pasionată.</p>
+            <a href="profesori.html" class="btn btn-primary">Citește mai mult</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="img/ev1.png" class="card-img-top" alt="Evenimente">
+          <div class="card-body">
+            <h5 class="card-title">Evenimente</h5>
+            <p class="card-text">Participă la activitățile și proiectele noastre școlare.</p>
+            <a href="evenimente.html" class="btn btn-primary">Citește mai mult</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small>© 2025 Liceul Meu. Toate drepturile rezervate.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

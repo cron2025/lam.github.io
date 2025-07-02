@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Liceul Atanasie Marienescu Lipova</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar (poți copia codul navbar din index.html) -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Liceul Atanasie Marienescu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="informatiiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Informații
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="informatiiDropdown">
+              <li><a class="dropdown-item" href="despre.html">Despre liceu</a></li>
+              <li><a class="dropdown-item" href="profesori.html">Profesori</a></li>
+              <li><a class="dropdown-item" href="clase.html">Clase</a></li>
+              <li><a class="dropdown-item" href="orar.html">Orar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="documenteDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documente utile
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="documenteDropdown">
+              <li><a class="dropdown-item" href="regulament.html">Regulament intern</a></li>
+              <li><a class="dropdown-item" href="calendar.html">Calendar examene</a></li>
+              <li><a class="dropdown-item" href="cereri.html">Cereri tip</a></li>
+              <li><a class="dropdown-item" href="manuale.html">Manuale digitale</a></li>
+              <li><a class="dropdown-item" href="platforme.html">Platforme educaționale</a></li>
+              <li><a class="dropdown-item" href="orar-online.html">Orar online</a></li>
+              <li><a class="dropdown-item" href="alte-doc.html">Alte documente</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="activitatiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Activități
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="activitatiDropdown">
+              <li><a class="dropdown-item" href="evenimente.html">Evenimente</a></li>
+              <li><a class="dropdown-item" href="noutati.html">Noutăți</a></li>
+              <li><a class="dropdown-item" href="galerie.html">Galerie foto</a></li>
+              <li><a class="dropdown-item" href="excursii.html">Excursii</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="page-title">Contact</h1>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h5>Date de contact</h5>
+        <ul class="list-unstyled">
+         <li><strong>Adresă:</strong> Str. Nicolae Titulescu nr. 1, Lipova, jud. Arad</li>
+          <li><strong>Telefon:</strong> 0257 564 123</li>
+          <li><strong>Email:</strong> <a href="mailto:secretariat@lamlipova.ro">secretariat@lamlipova.ro</a></li>
+          <li><strong>Program:</strong> Luni-Vineri, 8:00 - 16:00</li>
+        </ul>
+        <h6>Urmărește-ne:</h6>
+        <p>
+          <a href="#" class="me-2">Facebook</a>
+          <a href="#" class="me-2">Instagram</a>
+        </p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h5>Trimite-ne un mesaj</h5>
+        <form>
+          <div class="mb-3">
+            <label for="nume" class="form-label">Nume</label>
+            <input type="text" class="form-control" id="nume" placeholder="Numele tău">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="adresa@email.com">
+          </div>
+          <div class="mb-3">
+            <label for="mesaj" class="form-label">Mesaj</label>
+            <textarea class="form-control" id="mesaj" rows="4" placeholder="Scrie mesajul aici"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Trimite</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h5>Localizare</h5>
+        <div class="ratio ratio-16x9">
+         <iframe src="https://www.google.com/maps?q=Strada+Nicolae+Titulescu+1,+Lipova,+Arad,+Romania&output=embed" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 Liceul Meu. Toate drepturile rezervate.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
